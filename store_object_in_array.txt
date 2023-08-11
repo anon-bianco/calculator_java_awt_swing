@@ -1,0 +1,29 @@
+class Employee {
+    String firstName;
+    String lastName;
+    int empNo;
+
+    public Employee(String fName, String lName, int eNo){
+        this.firstName = fName;
+        this.lastName = lName;
+        this.empNo = eNo;
+    }
+}
+
+public class Main {
+    public static void main(String[] args){
+
+        Employee[] employee = new Employee[3];
+
+        employee[0] = new Employee("anon", "bianco", 1);
+        employee[1] = new Employee("shafeek", "rahman", 2);
+        employee[2] = new Employee("joyson", "joys", 3);
+
+        for (Employee value : employee) {
+            System.out.println(value.firstName + ", " + value.lastName + ", " + value.empNo);
+        }
+    }
+}
+
+
+
