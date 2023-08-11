@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+
+class Employee {
+    String firstName;
+    String lastName;
+    int no;
+}
+
+public class Main {
+    public static void main(String[] args){
+
+        Employee anon = new Employee();
+        anon.firstName = "anon";
+        anon.lastName = "bianco";
+        anon.no = 1;
+
+        Employee serin = new Employee();
+        serin.firstName = "raja";
+        serin.lastName = "serin";
+        serin.no = 2;
+
+
+        ArrayList<Employee> aList = new ArrayList<>();
+
+        aList.add(anon);
+        aList.add(serin);
+
+
+        for (Employee emp : aList){
+            System.out.print(emp.firstName + ", " + emp.lastName + ", " + emp.no);
+            System.out.println();
+        }
+    }
+}
+
+
+
